@@ -6,12 +6,47 @@
   font-weight: 200;
   background-color: transparent;
   box-shadow: 0px 1px 3px #2a2a2a;
-  background: url('cartoony.jpg');
+  background: url('scribble_light.png');
 }
 
 .navbar-default a.navbar-brand {
   font-family: 'Luckiest Guy', cursive;
   font-weight: 100;
   color: red;
+}
+
+.hero {
+  background: url('hero.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:500px;
+  color: white;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin:0;
+}
+
+.frosty {
+  background:rgba(0,0,0, 0.5);
+}
+
+.frosty h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+.frosty h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+.btn {
+  border-radius:0;
 }
 

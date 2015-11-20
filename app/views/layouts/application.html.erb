@@ -8,8 +8,9 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
+  <div id="wrap">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -43,11 +44,24 @@
 <% if notice.present? %>
   <p class="alert alert-info"><%= notice %></p>
 <% end %>
+
 <% if alert.present? %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 
 <%= yield %>
+
+  </div>
+  
+  <br class="clr" />
+
+  <div id="footer">
+    <div class="container">
+      <b>Footer Here</b>
+      <br />
+      <%= link_to 'Link', '#' %>
+    </div>
+  </div>
 
 </body>
 </html>

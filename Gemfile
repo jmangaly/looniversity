@@ -35,6 +35,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Add Simple Form
+gem 'simple_form'
+
 # Add Bootstrap
 gem 'bootstrap-sass', '~> 3.3.4'
 

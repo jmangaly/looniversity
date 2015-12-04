@@ -41,6 +41,15 @@ gem 'simple_form'
 # Add Bootstrap
 gem 'bootstrap-sass', '~> 3.3.4'
 
+# Add Carrierwave for images
+gem 'carrierwave'
+
+# Add figaro gem
+gem 'figaro'
+
+# Install Fog
+gem 'fog', '~> 1.3.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

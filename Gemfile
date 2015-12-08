@@ -56,6 +56,9 @@ gem 'carrierwave-aws'
 # Add Stripe
 gem 'stripe'
 
+# Add Ranked Model
+gem 'ranked-model'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

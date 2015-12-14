@@ -110,8 +110,15 @@ body {
   font-size: 15px;
 }
 
+.section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:20px;
+  margin:20px;
+}
+
 .lesson {
-  background-color: #484043;
+  background-color:#484043;
   margin-top:10px;
   height:130px;
 }
@@ -120,3 +127,38 @@ body {
   font-weight: 100;
   font-size:25px;
 }
+
+.lessons li {
+  background:#ecd7bf;
+  color:black;
+  margin:10px;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  padding:8px;
+  font-size:15px;
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul .header {
+  font-size:25px;
+}
+
+ul .header .glyphicon {
+  font-size:20px;
+}
+
+.lessons li b {
+  font-size:25px;
+  font-weight:100;
+}
+
+.lessons li p {
+  margin:0;
+}
+
+

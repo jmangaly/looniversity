@@ -5,8 +5,8 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <link href="http://vjs.zencdn.net/5.0/video-js.min.css" rel="stylesheet">
-  <script src="http://vjs.zencdn.net/5.0/video.min.js"></script>
+  <link href="https://vjs.zencdn.net/5.0/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/5.0/video.min.js"></script>
 </head>
 
 <body>
@@ -31,6 +31,7 @@
          <%= link_to 'See All Courses', courses_path %>
         </li>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
           <li><%= link_to 'My Dashboard', dashboard_path %></li>
@@ -39,9 +40,8 @@
           <li><%= link_to 'Sign In', new_user_session_path %></li>
           <li><%= link_to 'Sign Up', new_user_registration_path %></li>
         <% end %>
-         <!--<li><a href="#">Link</a></li>
-        <li><a href="#">Log In</a></li>-->
       </ul>
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -49,26 +49,60 @@
 <% if notice.present? %>
   <p class="alert alert-info"><%= notice %></p>
 <% end %>
-
 <% if alert.present? %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 
 <%= yield %>
 
-  </div>
-  
+</div> 
+
   <br class="clr" />
 
   <div id="footer">
     <div class="container">
-      <b>Teachers</b>
-      <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', '#' %>
+        <br />
+        <%= link_to 'Careers', '#' %>
+        <br />
+        <%= link_to 'Privacy Policy', '#' %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        Jennifer Mangaly
+        <br />
+        Euless TX 76039
+        <br />
+       </div> 
+      <div class="col-xs-12 col-sm-3">
+        <b>Social</b>
+          <br />
+          <br />
+          <%= link_to 'http://github.com/jmangaly' do %>
+            <%= image_tag 'github.png', :class => 'social-button' %>
+            <% end %>
+          <%= link_to 'https://www.linkedin.com/in/jennifermangaly' do %>  
+            <%= image_tag 'linkedin.png', :class => 'social-button' %>
+             <% end %>
+          <%= link_to 'http://fruitypapaya.tumblr.com/' do %>
+            <%= image_tag 'tumblr.png', :class => 'social-button' %>
+             <% end %>
+          <%= link_to 'http://twitter.com/jmangaly' do %>  
+            <%= image_tag 'twitter.png', :class => 'social-button' %>
+             <% end %>
+      </div>
     </div>
   </div>
-
 </body>
 </html>
-
-

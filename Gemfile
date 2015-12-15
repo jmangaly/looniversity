@@ -62,6 +62,9 @@ gem 'ranked-model'
 #JQuery UI Rails
 gem 'jquery-ui-rails'
 
+#Sprockets
+gem 'sprockets', '2.11.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
